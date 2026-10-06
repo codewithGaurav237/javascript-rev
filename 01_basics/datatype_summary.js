@@ -18,7 +18,7 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 // const bigNumber = 3456543576654356754n
 
@@ -38,8 +38,8 @@ const myFunction = function(){
     console.log("hey pam!");
 }
 
-console.log(typeof anotherId);
- myFunction();
+// console.log(typeof anotherId);
+//  myFunction();
 
 // JavaScript is a dynamically typed language. ✅
 // In JavaScript, you don't need to specify the data type when declaring a variable.
@@ -53,3 +53,22 @@ console.log(typeof anotherId);
 // int x = 10;
 // x = "Hello";  // ❌ Error
 // Once x is declared as an int, it cannot store a string.
+// =============================================
+// memory in js 
+// stack(Primitive)/ heap(Non-primitive)
+let myname = "gaurav";
+let anothername = myname;
+anothername = "saurav";
+console.log(anothername);
+console.log(myname);
+// yaha value copy hua hai isliye reslut defer hai!  
+
+// heap memory
+const userOne = {
+    name:"gaurav",
+    email:"user1@gmail.com"
+}
+let userTwo = userOne;
+userTwo.email="user2@gmail.com"          
+console.log(userOne);
+console.log(userTwo);
